@@ -1,10 +1,16 @@
 import React from "react";
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, Image, Button } from "react-native";
 
 const HomeScreen = () => {
   return (
   <View>
-    <Text style={styles.text}>HomeScreen test</Text>;
+    <Text style={styles.text}>Hi there! No matter what happens, we are all in this together. Don't lose hope, and here is a puppy picture for ya:</Text>
+    <Image 
+      source={{uri: "https://i.redd.it/rgwtb019m9451.jpg"}} 
+    />
+    <Button
+      title="I Understand!"
+    />
   </View>
   )
 };
