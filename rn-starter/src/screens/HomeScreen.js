@@ -7,6 +7,7 @@ const HomeScreen = () => {
     <Text style={styles.text}>Hi there! No matter what happens, we are all in this together. Don't lose hope, and here is a puppy picture for ya:</Text>
     <Image 
       source={{uri: "https://i.redd.it/rgwtb019m9451.jpg"}} 
+      style={styles.puppy}
     />
     <Button
       title="I Understand!"
@@ -17,8 +18,14 @@ const HomeScreen = () => {
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
-  }
+    fontSize: 30,
+    textAlign: "center"
+  },
+  puppy: {
+    alignContent: "center",
+    width: 250,
+    height: 250,
+  },
 });
 
 export default HomeScreen;
