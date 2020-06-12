@@ -3,7 +3,10 @@ import { Text, StyleSheet, View, Image, Button } from "react-native";
 
 const HomeScreen = () => {
   return (
-  <View>
+  <View style={{
+    justifyContent: 'center',
+    alignItems: 'center',
+  }}>
     <Text style={styles.text}>Hi there! No matter what happens, we are all in this together. Don't lose hope, and here is a puppy picture for ya:</Text>
     <Image 
       source={{uri: "https://i.redd.it/rgwtb019m9451.jpg"}} 
@@ -22,7 +25,7 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   puppy: {
-    alignContent: "center",
+    resizeMode: "center",
     width: 250,
     height: 250,
   },
