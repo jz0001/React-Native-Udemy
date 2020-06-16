@@ -29,6 +29,8 @@ const styles = StyleSheet.create({
     width: 250,
     height: 250,
   },
+  text1: {fontSize: 30},
+  text2: {fontSize: 20},
 });
 
 export default HomeScreen;
