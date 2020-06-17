@@ -14,12 +14,16 @@ const ListScreen = () => {
             keyExtractor={(friend)=> friend.name}
             data={friends}
             renderItem={({item})=>{
-                return <Text>{item.name}</Text>
+                return <Text style={styles.textStyle}>{item.name}</Text>
             }}
         />
     )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    textStyle: {
+        marginVertical: 200
+    }
+})
 
 export default ListScreen
