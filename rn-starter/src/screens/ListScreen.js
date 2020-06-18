@@ -11,6 +11,8 @@ const ListScreen = () => {
         {name: "Friend 6", age: 20},
         {name: "Friend 7", age: 20},
         {name: "Friend 8", age: 20},
+        {name: "Friend 9", age: 20},
+        {name: "Friend 10", age: 20},
     ]
     return (
         <FlatList 
@@ -27,7 +29,7 @@ const ListScreen = () => {
 
 const styles = StyleSheet.create({
     textStyle: {
-        marginVertical: 200
+        marginVertical: 50
     }
 })
 
