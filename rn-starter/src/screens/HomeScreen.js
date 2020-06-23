@@ -19,6 +19,7 @@ const HomeScreen = () => {
     />
     <Button
       title="I Understand!"
+      onPress={() => console.log("click")}
     />
   </View>
   )
