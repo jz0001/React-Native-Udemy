@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
-import { Text, StyleSheet, View, Image, Button } from "react-native";
+import { Text, StyleSheet, View, Image, Button, TouchableOpacity } from "react-native";
 
-const HomeScreen = () => {
-  let name="Jinming"
+const HomeScreen = (props) => {
+  // let name="Jinming"
+  console.log(props)
   return (
     // <Fragment>
     //   <Text style={styles.text1}>Getting started</Text>
@@ -21,6 +22,13 @@ const HomeScreen = () => {
       title="I Understand!"
       onPress={(event) => console.log(event.target)}
     />
+    <TouchableOpacity onPress={()=>props.navigation.navigate("Components")}>
+      <Text>I understand!</Text>
+      <Image 
+      source={{uri: "https://i.redd.it/rgwtb019m9451.jpg"}} 
+      style={styles.puppy}
+    />
+    </TouchableOpacity>
   </View>
   )
 };
