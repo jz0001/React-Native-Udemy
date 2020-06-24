@@ -5,7 +5,7 @@ const ImageDetail = (props) => {
     console.log(props)
     return(
         <View>
-            <Image source={require('../../assets/beach.jpg')}/>
+            <Image source={props.image}/>
             <Text>IMG DETAIL</Text>
         </View>
     )
