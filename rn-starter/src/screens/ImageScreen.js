@@ -6,9 +6,9 @@ const ImageScreen = () => {
     return (
         <View>
             <ImageDetail title='forest' image={require('../../assets/forest.jpg')}/>
-            <ImageDetail title='mountains'image={require('../../assets/mountain.jpg')}/>
-            <ImageDetail title='river'image={require('../../assets/beach.jpg')}/>
-            <ImageDetail title='city'/>
+            <ImageDetail title='mountains' image={require('../../assets/mountain.jpg')}/>
+            <ImageDetail title='river' image={require('../../assets/beach.jpg')}/>
+            <ImageDetail title='city' image={require('../../assets/forest.jpg')}/>
         </View>
     )
 }
