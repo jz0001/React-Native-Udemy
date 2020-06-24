@@ -22,7 +22,7 @@ const HomeScreen = (props) => {
       title="I Understand!"
       onPress={(event) => console.log(event.target)}
     />
-    <TouchableOpacity onPress={()=>props.navigation.navigate("Components")}>
+    <TouchableOpacity onPress={()=>props.navigation.navigate("Image")}>
       <Text>I understand!</Text>
       <Image 
       source={{uri: "https://i.redd.it/rgwtb019m9451.jpg"}} 
