@@ -9,7 +9,7 @@ const ColorScreen = () => {
             <Button 
                 title="add color"
                 onPress={()=>addColors([...colors, 1])} />
-            {colors.forEach((color)=>{
+            {colors.map((color)=>{
                 return <View style={{ height: 100, width: 100, backgroundColor: "rgb(0,255,1)"}} />
             })}
         </View>
