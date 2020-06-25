@@ -29,6 +29,10 @@ const HomeScreen = (props) => {
       style={styles.puppy}
     />
     </TouchableOpacity>
+    <Button
+      title="Counter"
+      onPress={() => props.navigation.navigate("Counter")}
+    />
   </View>
   )
 };
