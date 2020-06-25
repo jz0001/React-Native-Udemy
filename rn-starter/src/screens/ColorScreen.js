@@ -8,12 +8,16 @@ const ColorScreen = () => {
         <View>
             <Button 
                 title="add color"
-                onPress={()=>addColors([...colors, 1])} />
+                onPress={()=>addColors([...colors, randomRGB()])} />
             {colors.map((color)=>{
-                return <View style={{ height: 100, width: 100, backgroundColor: "rgb(0,255,1)"}} />
+                return <View style={{ height: 100, width: 100, backgroundColor: color}} />
             })}
         </View>
     )
+}
+
+const randomRGB = () => {
+    return `rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`
 }
 
 const styles = StyleSheet.create({})
