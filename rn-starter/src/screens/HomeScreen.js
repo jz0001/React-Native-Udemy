@@ -35,7 +35,7 @@ const HomeScreen = (props) => {
     />
     <Button
       title="Color"
-      onPress={() => props.navigation.navigate("Counter")}
+      onPress={() => props.navigation.navigate("Color")}
     />
   </View>
   )
