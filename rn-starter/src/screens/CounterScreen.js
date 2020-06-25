@@ -11,7 +11,7 @@ const CounterScreen = () => {
         <Button 
             title="-"
             onPress={() => setCounter(counter-1)} />
-        <Text>Counter</Text>
+        <Text>Counter: {counter}</Text>
     </View>
 }
 
