@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { View, StyleSheet, Button } from 'react-native'
+import { View, StyleSheet, Button, FlatList } from 'react-native'
 
 const ColorScreen = () => {
     const [colors, addColors] = useState([])
@@ -9,9 +9,15 @@ const ColorScreen = () => {
             <Button 
                 title="add color"
                 onPress={()=>addColors([...colors, randomRGB()])} />
-            {colors.map((color)=>{
+            {/* {colors.map((color)=>{
                 return <View style={{ height: 100, width: 100, backgroundColor: color}} />
-            })}
+            })} */}
+            <FlatList 
+                keyExtractor={(item)=>item}
+                data={colors}
+                renderItem={({ item })=>{
+                    return <View style={{ height: 100, width: 100, backgroundColor: item}} />
+                }} />
         </View>
     )
 }
